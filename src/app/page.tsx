@@ -6,8 +6,9 @@ import Main from "./layout/Main";
 export default function Home() {
   return (
     <main className="">
-      <Introduction />
+      {/* <Introduction /> */}
       <Main />
+      <Practice />
     </main>
   );
 }
