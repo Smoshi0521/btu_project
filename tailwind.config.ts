@@ -12,6 +12,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+
+        "illu_003" : 'url("/assets/Hiroko/BTU_Website_Illus003_BG.png")'
       },
     },
   },
