@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 
         "illu_003" : 'url("/assets/Hiroko/BTU_Website_Illus003_BG.png")',
-        "illu_001" : 'url("/assets/Illus001/BTU_Website_Illus001_BG.png")'
+        "illu_001" : 'url("/assets/Illus001/Illu01BG.png")'
       },
     },
   },

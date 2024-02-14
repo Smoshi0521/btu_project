@@ -21,14 +21,14 @@ function Practice() {
 
   console.log(inView)
   return (
-    <div ref={ref} data-scroll data-scroll-speed="0.5" className='bg-illu_003 bg-cover bg-no-repeat h-screen w-full flex items-center justify-center relative overflow-y-hidden'>
-      <Image  src={"/assets/Hiroko/BTU_Website_Illus003_Hiroko_option.png"} alt='Hiroko' width={1200} height={0} className='' />
+    <div ref={ref}  data-scroll-speed="0.8" className='bg-white bg-cover bg-no-repeat h-screen w-full flex items-center justify-center relative overflow-y-hidden'>
+      {/* <Image  src={"/assets/Hiroko/BTU_Website_Illus003_Hiroko_option.png"} alt='Hiroko' width={1200} height={0} className='' /> */}
 
-      <img  data-scroll-speed="1"  src={"/assets/Hiroko/BTU_Website_Illus003_FXTop.png"} alt='Hiroko'
+      {/* <img  data-scroll-speed="1"  src={"/assets/Hiroko/BTU_Website_Illus003_FXTop.png"} alt='Hiroko'
         className={`${inView ? "block" : "hidden"} ${showFirstImage ? "opacity-100" : "opacity-0"} w-full absolute transition duration-700 animate-pulse`} />
 
       <img src={"/assets/Hiroko/BTU_Website_Illus003_FXBack.png"} alt='Hiroko'
-        className={`${inView ? "block" : "hidden"} ${showFirstImage ? "opacity-0" : "opacity-100"} w-full absolute  transition duration-700 animate-pulse`} />
+        className={`${inView ? "block" : "hidden"} ${showFirstImage ? "opacity-0" : "opacity-100"} w-full absolute  transition duration-700 animate-pulse`} /> */}
     </div>
   )
 }

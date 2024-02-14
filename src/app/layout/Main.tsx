@@ -36,9 +36,9 @@ function Main() {
     };
 
     const HideText = () => {
-      gsap.to('.btu', 1.5, {
+      gsap.to('.btu', {
         x: "0px",
-        duration: 10
+        duration: 1.5
       });
     };
 
@@ -52,11 +52,17 @@ function Main() {
   }, [scrollY])
 
   return (
-    <div className=' sm:sticky top-0 bg-illu_001 bg-cover bg-no-repeat h-screen w-full overflow-x-hidden'>
-      <div className=' h-screen w-full flex flex-col md:flex-row items-center sm:justify-center relative overflow-hidden'>
+    <div className='sticky top-0 bg-illu_001 bg-cover bg-no-repeat sm:h-screen md:h-[80vw] w-full overflow-hidden '>
+      <img src='/assets/Illus001/Illu01floor.png' className='absolute bottom-0 w-full h-[600px] opacity-65' />
+      <div className=' fixed top-0 h-screen w-full flex flex-col md:flex-row items-center justify-center  overflow-hidden px-5'>
 
-        <img src='/assets/Illus001/BTU_Website_Illus001_LogoBG.png' className='btu top-20 relative sm:absolute w-[60vw]' />
-        <div className={`w-[400px] lg:w-[700px] sm:absolute left-[2%] tracking-widest flex flex-col space-y-2 px-5 relative top-20 sm:top-40`}>
+
+        <img src='/assets/Illus001/LOGOBG.png' className='btu absolute w-[100vw] sm:w-[70vw]' />
+        <img src='/assets/Illus001/BTU_Website_Illus001_Hiroko.png' className='z-30 h-[100vh] absolute top-10 right-20' />
+        <img src='/assets/Illus001/BTU_Website_Illus001_Yosuke.png' className='z-30 h-[100vh] absolute top-10 right-20' />
+        <img src='/assets/Illus001/BTU_Website_Illus001_Chop.png' className='z-30 h-[100vh] absolute top-10 right-20' />
+
+        <div className={`hidden w-[400px] lg:w-[700px] sm:absolute left-[2%] tracking-widest sm:flex flex-col space-y-2 px-5 relative top-20 sm:top-40`}>
           <AnimatePresence>
             {
               scrollY > 0 && (
@@ -67,7 +73,7 @@ function Main() {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 15, opacity: 0 }}
                     transition={{ duration: 0.5, delay: 0 }}
-                    className='font-bold text-violet-500 md:text-2xl lg:text-[25px]'>
+                    className='font-bold text-pink-500 shadow-lg md:text-2xl lg:text-[25px]'>
                     Beat Them Up is renewing the entertainment industry by creating the first VISUAL, MUSICAL & Social 360 IP!
                   </motion.p>
                   <motion.p
