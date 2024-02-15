@@ -8,7 +8,7 @@ function MainTextMobile() {
   const [scrollY, setScrollY] = useState<number>(0)
 
   return (
-    <div className={`sm:hidden tracking-widest flex flex-col gap-2 bg-[#060b1d] overflow-hidden mb-10 h-[400px] px-5 pb-10 pt-10 overflow-x-hidden`}>
+    <div className={`md:hidden tracking-widest flex flex-col gap-2 bg-[#0d0f26] overflow-hidden h-[400px] px-5 pb-10 pt-10 overflow-x-hidden`}>
       <AnimatePresence>
         {
           inView && (

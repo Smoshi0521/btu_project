@@ -52,25 +52,28 @@ function Main() {
   }, [scrollY])
 
   return (
-    <div className='sm:sticky top-0 bg-illu_001 bg-cover bg-no-repeat h-screen md:h-[80vw] w-full overflow-y-hidden'>
+    <div className='md:sticky top-0 bg-illu_001 bg-cover bg-no-repeat h-screen md:h-[80vw] w-full overflow-y-hidden'>
 
-      <div className='h-screen w-full flex flex-col md:flex-row items-center justify-center px-5 border overflow-y-hidden'>
-        <div className='border relative w-full flex border border-red-500 pb-20 items-end justify-end h-screen pr-0'>
-          <img src='/assets/Illus001/BTU_Website_Illus001_Hiroko.png' className='z-30 min-w-[600px] w-full max-w-[900px] absolute border bottom-0' />
+      <div className='h-screen w-full flex flex-col md:flex-row items-center justify-center px-5 overflow-y-hidden'>
+
+        {/* BTU CHARACTERS */}
+        <div className='relative w-full flex border-red-500  sm:justify-center md:justify-end h-screen lg:pr-[50px]'>
+          <img src='/assets/Illus001/Illu01CH.png' className='z-30 min-w-[400px] left-[-20%] xs:left-auto sm:w-[500px] lg:w-[600px] bottom-0 absolute' />
           {/* <img src='/assets/Illus001/BTU_Website_Illus001_Yosuke.png' className='z-30 w-[100vw] min-w-[600px] max-w-[900px] absolute' />
           <img src='/assets/Illus001/BTU_Website_Illus001_Chop.png' className='z-30 w-[100vw] min-w-[600px] max-w-[900px] absolute' /> */}
         </div>
+
         <div className='h-screen w-full absolute overflow-y-hidden'>
           <img src='/assets/Illus001/Illu01floor.png' className='absolute bottom-0 w-full h-[12vh] opacity-65' />
         </div>
-        <img src='/assets/Illus001/LOGOBG.png' className={` hidden md:block btu top-32 sm:top-none absolute w-[100vw] sm:w-[70vw]`} />
-        <img src='/assets/Illus001/LOGOBG.png' className={` absolute top-32 sm:top-none md:hidden w-[100vw] sm:w-[70vw]`} />
 
-
-        <div className={`hidden w-[400px] lg:w-[700px] sm:absolute left-[2%] tracking-widest sm:flex flex-col space-y-2 px-5 relative top-20 sm:top-40`}>
+        {/* BTU BACKGROUND */}
+        <img src='/assets/Illus001/LOGOBG.png' className={` hidden md:block btu top-20 sm:top-none absolute lg:w-[80%]`} />
+        <img src='/assets/Illus001/LOGOBG.png' className={` absolute top-32 xs:top-20 sm:top-none md:hidden w-[100vw]`} />
+        <div className={`hidden w-[400px] lg:w-[700px] md:absolute left-[2%] tracking-widest md:flex flex-col space-y-2 px-5 relative top-20 sm:top-40`}>
           <AnimatePresence>
             {
-              scrollY > 40 && (
+              scrollY > 0 && (
                 <>
                   <motion.p
                     key="paragraph1"

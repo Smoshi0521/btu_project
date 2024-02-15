@@ -16,6 +16,9 @@ const config: Config = {
         "illu_003" : 'url("/assets/Hiroko/BTU_Website_Illus003_BG.png")',
         "illu_001" : 'url("/assets/Illus001/Illu01BG.png")'
       },
+      screens:{
+        xs:"400px"
+      }
     },
   },
   plugins: [],
