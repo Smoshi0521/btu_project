@@ -44,7 +44,7 @@ function Main() {
 
     if (scrollY > 0) {
       ShowText();
-    } else {
+    } else if (scrollY < 40) {
       // Cancel any existing tweens before creating a new one
       gsap.killTweensOf('.btu');
       HideText();
@@ -52,20 +52,25 @@ function Main() {
   }, [scrollY])
 
   return (
-    <div className='sticky top-0 bg-illu_001 bg-cover bg-no-repeat sm:h-screen md:h-[80vw] w-full overflow-hidden '>
-      <img src='/assets/Illus001/Illu01floor.png' className='absolute bottom-0 w-full h-[600px] opacity-65' />
-      <div className=' fixed top-0 h-screen w-full flex flex-col md:flex-row items-center justify-center  overflow-hidden px-5'>
+    <div className='sm:sticky top-0 bg-illu_001 bg-cover bg-no-repeat h-screen md:h-[80vw] w-full overflow-y-hidden'>
 
+      <div className='h-screen w-full flex flex-col md:flex-row items-center justify-center px-5 border overflow-y-hidden'>
+        <div className='border relative w-full flex border border-red-500 pb-20 items-end justify-end h-screen pr-0'>
+          <img src='/assets/Illus001/BTU_Website_Illus001_Hiroko.png' className='z-30 min-w-[600px] w-full max-w-[900px] absolute border bottom-0' />
+          {/* <img src='/assets/Illus001/BTU_Website_Illus001_Yosuke.png' className='z-30 w-[100vw] min-w-[600px] max-w-[900px] absolute' />
+          <img src='/assets/Illus001/BTU_Website_Illus001_Chop.png' className='z-30 w-[100vw] min-w-[600px] max-w-[900px] absolute' /> */}
+        </div>
+        <div className='h-screen w-full absolute overflow-y-hidden'>
+          <img src='/assets/Illus001/Illu01floor.png' className='absolute bottom-0 w-full h-[12vh] opacity-65' />
+        </div>
+        <img src='/assets/Illus001/LOGOBG.png' className={` hidden md:block btu top-32 sm:top-none absolute w-[100vw] sm:w-[70vw]`} />
+        <img src='/assets/Illus001/LOGOBG.png' className={` absolute top-32 sm:top-none md:hidden w-[100vw] sm:w-[70vw]`} />
 
-        <img src='/assets/Illus001/LOGOBG.png' className='btu absolute w-[100vw] sm:w-[70vw]' />
-        <img src='/assets/Illus001/BTU_Website_Illus001_Hiroko.png' className='z-30 h-[100vh] absolute top-10 right-20' />
-        <img src='/assets/Illus001/BTU_Website_Illus001_Yosuke.png' className='z-30 h-[100vh] absolute top-10 right-20' />
-        <img src='/assets/Illus001/BTU_Website_Illus001_Chop.png' className='z-30 h-[100vh] absolute top-10 right-20' />
 
         <div className={`hidden w-[400px] lg:w-[700px] sm:absolute left-[2%] tracking-widest sm:flex flex-col space-y-2 px-5 relative top-20 sm:top-40`}>
           <AnimatePresence>
             {
-              scrollY > 0 && (
+              scrollY > 40 && (
                 <>
                   <motion.p
                     key="paragraph1"
@@ -73,7 +78,7 @@ function Main() {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 15, opacity: 0 }}
                     transition={{ duration: 0.5, delay: 0 }}
-                    className='font-bold text-pink-500 shadow-lg md:text-2xl lg:text-[25px]'>
+                    className='font-bold text-pink-500 md:text-2xl lg:text-[25px]'>
                     Beat Them Up is renewing the entertainment industry by creating the first VISUAL, MUSICAL & Social 360 IP!
                   </motion.p>
                   <motion.p

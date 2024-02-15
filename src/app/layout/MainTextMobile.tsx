@@ -8,7 +8,7 @@ function MainTextMobile() {
   const [scrollY, setScrollY] = useState<number>(0)
 
   return (
-    <div className={`sm:hidden tracking-widest flex flex-col gap-2 bg-slate-800 overflow-hidden mb-10 h-[400px] px-5 pb-10 pt-10`}>
+    <div className={`sm:hidden tracking-widest flex flex-col gap-2 bg-[#060b1d] overflow-hidden mb-10 h-[400px] px-5 pb-10 pt-10 overflow-x-hidden`}>
       <AnimatePresence>
         {
           inView && (
@@ -29,7 +29,7 @@ function MainTextMobile() {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 15, opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.25 }}
-                className='md:text-xl lg:text-[20px]'
+                className='md:text-xl lg:text-[20px] text-white'
               >
                 BTU is a shonen anime about music but foremost, a story about art and creativity…
               </motion.p>
@@ -39,7 +39,7 @@ function MainTextMobile() {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 15, opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className='md:text-xl lg:text-[20px]'
+                className='md:text-xl lg:text-[20px] text-white'
               >
                 So, put a vinyl on your turntable, connect your headphones, turn on the volume and push the Play button…
               </motion.p>
@@ -48,7 +48,7 @@ function MainTextMobile() {
           )
         }
       </AnimatePresence>
-        <div ref={ref}></div>
+        <div ref={ref} className=''></div>
     </div>
   )
 }
