@@ -58,7 +58,7 @@ function Main() {
 
         {/* BTU CHARACTERS */}
         <div className='relative w-full flex border-red-500  sm:justify-center md:justify-end h-screen lg:pr-[50px]'>
-          <img src='/assets/Illus001/Illu01CH.png' className='z-30 min-w-[350px] left-[-20%] xs:left-auto sm:w-[500px] lg:w-[600px] xl:w-[700px] bottom-0 absolute' />
+          <img src='/assets/Illus001/Illu01CH.png' className='z-30 min-w-[300px] xs:left-auto sm:w-[500px] lg:w-[600px] xl:w-[700px] bottom-0 absolute' />
           {/* <img src='/assets/Illus001/BTU_Website_Illus001_Yosuke.png' className='z-30 w-[100vw] min-w-[600px] max-w-[900px] absolute' />
           <img src='/assets/Illus001/BTU_Website_Illus001_Chop.png' className='z-30 w-[100vw] min-w-[600px] max-w-[900px] absolute' /> */}
         </div>
@@ -71,7 +71,7 @@ function Main() {
         <img src='/assets/Illus001/LOGOBG.png' className={` hidden md:block btu top-20 sm:top-none absolute lg:w-[80%]`} />
         <img src='/assets/Illus001/LOGOBG.png' className={` absolute top-32 xs:top-20 sm:top-none md:hidden w-[100vw]`} />
         <div className='w-full absolute h-screen flex items-center'>
-          <div className={`hidden md:w-[500px] lg:w-[600px] xl:w-[800px] md:absolute left-[2%] tracking-widest md:flex flex-col space-y-5 px-5 relative mb-[250px]`}>
+          <div className={`hidden md:w-[500px] lg:w-[600px] xl:w-[800px] md:absolute left-[2%] tracking-widest md:flex flex-col space-y-5 px-5 relative`}>
             <AnimatePresence>
               {
                 scrollY > 0 && (
