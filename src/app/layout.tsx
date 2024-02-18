@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={"overflow-x-hidden"}>{
+      <body className={"overflow-hidden"}>{
       <SmoothScroll>
         {children}
       </SmoothScroll>

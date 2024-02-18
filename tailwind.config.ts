@@ -22,5 +22,8 @@ const config: Config = {
     },
   },
   plugins: [],
+  corePlugins: {
+    overflow: false, // Disable Tailwind's default overflow utility
+  },
 };
 export default config;

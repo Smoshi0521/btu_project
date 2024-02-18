@@ -2,13 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useInView } from "react-intersection-observer";
-
-function Practice() {
+import { SetStateAction } from 'react';
+type Props = {
+  setViewSecondPage: React.Dispatch<SetStateAction<boolean>>
+}
+function Practice({ setViewSecondPage }: Props) {
   const { ref, inView } = useInView()
   const [showFirstImage, setShowFirstImage] = useState(true);
-
-
-
 
   useEffect(() => {
     // Alternate between showing the first and second image every 2 seconds
@@ -21,7 +21,7 @@ function Practice() {
 
   console.log(inView)
   return (
-    <div ref={ref}  data-scroll-speed="0.8" className='bg-white bg-cover bg-no-repeat h-screen w-full flex items-center justify-center relative overflow-y-hidden'>
+    <div ref={ref} data-scroll data-scroll-speed="0" className='bg-[#0d0f26] bg-cover bg-no-repeat h-screen w-full flex items-center justify-center relative overflow-x-hidden'>
       {/* <Image  src={"/assets/Hiroko/BTU_Website_Illus003_Hiroko_option.png"} alt='Hiroko' width={1200} height={0} className='' /> */}
 
       {/* <img  data-scroll-speed="1"  src={"/assets/Hiroko/BTU_Website_Illus003_FXTop.png"} alt='Hiroko'
