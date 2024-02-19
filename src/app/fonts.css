@@ -1,0 +1,7 @@
+/* styles/fonts.css */
+@font-face {
+  font-family: "lexend";
+  src: url("/fonts/lexend/Lexend-Bold.ttf2") format("ttf2"),
+    url("/fonts/lexend/Lexend-Bold.ttf") format("ttf");
+  /* Add additional font weights and styles if needed */
+}
