@@ -13,7 +13,7 @@ export default function Home() {
   const [openMenu, setOpenMenu] = useState<boolean>(false)
 
   return (
-    <>
+    <div className="">
       {/* <Introduction /> */}
       <Navbar setOpenMenu={setOpenMenu}/>
       <Main viewSecondPage={viewSecondPage} />
@@ -21,6 +21,6 @@ export default function Home() {
       <Practice setViewSecondPage={setViewSecondPage} />
       <Sample />
 
-    </>
+    </div>
   );
 }

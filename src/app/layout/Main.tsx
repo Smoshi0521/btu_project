@@ -57,9 +57,9 @@ function Main({viewSecondPage}:Props) {
   }, [scrollY])
 
   return (
-    <div data-scroll data-scroll-speed="0" className={`h-screen top-0 bg-illu_001 bg-cover bg-no-repeat w-full overflow-x-hidden z-0`}>
+    <div data-scroll data-scroll-speed="0" className={`relative h-screen top-0 bg-illu_001 bg-cover bg-no-repeat w-full overflow-x-hidden z-0`}>
 
-      <div className='h-screen w-full flex flex-col md:flex-row items-center justify-center px-5 overflow-x-hidden z-0'>
+      <div className='h-screen w-full flex flex-col md:flex-row items-center justify-center px-5 z-0'>
 
         {/* BTU CHARACTERS */}
         <div className='relative bottom-20 md:bottom-auto w-full flex border-red-500 justify-center md:justify-end h-screen lg:pr-[50px]'>
@@ -73,7 +73,7 @@ function Main({viewSecondPage}:Props) {
         </div>
 
         {/* BTU BACKGROUND */}
-        <Image alt='characters' width={2000} height={100} src='/assets/Illus001/LOGOBG.png' className={` hidden md:block btu top-20 sm:top-none absolute lg:w-[80%] overflow-x-hidden`} />
+        <Image alt='characters' width={2000} height={100} src='/assets/Illus001/LOGOBG.png' className={` hidden md:block btu top-20 sm:top-none absolute lg:w-[80%]`} />
         <Image alt='characters' width={2000} height={100} src='/assets/Illus001/LOGOBG.png' className={` absolute top-32 xs:top-20 sm:top-none md:hidden w-[100vw]`} />
         
         <div className='w-full absolute h-screen flex items-center'>

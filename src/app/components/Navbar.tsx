@@ -81,7 +81,7 @@ function Navbar({ setOpenMenu }: Props) {
 
 
 
-      <div className='hidden md:flex justify-end items-center text-white gap-3 w-full'>
+      <div className='hidden md:flex justify-end items-center text-white gap-3 w-full overflow-x-hidden'>
         <div className=' h-full relative flex items-center group'>
           <span className='bg-[#23ffd3] group-hover:h-full h-0 top-0 rounded-b-xl duration-500 w-full left-0 absolute z-10'></span>
           <a href='' className='z-20 w-full h-full px-3 flex items-center group-hover:text-[#a702f4] duration-500  tracking-widest'>
