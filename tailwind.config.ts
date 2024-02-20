@@ -18,6 +18,9 @@ const config: Config = {
       },
       screens:{
         xs:"400px"
+      },
+      colors:{
+        'skyBlue': '#24fed2'
       }
     },
   },

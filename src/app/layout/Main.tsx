@@ -70,7 +70,7 @@ function Main({viewSecondPage}:Props) {
 
         {/* BTU CHARACTERS */}
         <div className='relative bottom-20 lg:bottom-auto w-full flex border-red-500 justify-center lg:justify-end h-screen lg:pr-[50px]'>
-          <Image alt='characters' width={2000} height={100} src='/assets/Illus001/Illu01CH.png' loading='lazy'  className='z-30 min-w-[300px] w-[500px] sm:w-[500px] lg:w-[600px] xl:w-[700px] bottom-0 absolute' />
+          <Image alt='characters' width={2000} height={100} src='/assets/Illus001/Illu01CH.png' priority  className='z-30 min-w-[300px] w-[500px] sm:w-[500px] lg:w-[600px] xl:w-[700px] bottom-0 absolute' />
           {/* <img src='/assets/Illus001/BTU_Website_Illus001_Yosuke.png' className='z-30 w-[100vw] min-w-[600px] max-w-[900px] absolute' />
           <img src='/assets/Illus001/BTU_Website_Illus001_Chop.png' className='z-30 w-[100vw] min-w-[600px] max-w-[900px] absolute' /> */}
         </div>
@@ -80,8 +80,8 @@ function Main({viewSecondPage}:Props) {
         </div>
 
         {/* BTU BACKGROUND */}
-        <Image alt='characters' width={2000} height={100} src='/assets/Illus001/LOGOBG.png' loading='lazy' className={` hidden lg:block btu top-20 sm:top-none absolute lg:w-[80%]`} />
-        <Image alt='characters' width={2000} height={100} src='/assets/Illus001/LOGOBG.png' loading='lazy' className={` absolute top-32 xs:top-20 sm:top-none lg:hidden w-[100vw]`} />
+        <Image alt='characters' width={2000} height={100} src='/assets/Illus001/LOGOBG.png'  priority className={` hidden lg:block btu top-auto sm:top-none absolute lg:w-[80%]`} />
+        <Image alt='characters' width={2000} height={100} src='/assets/Illus001/LOGOBG.png' priority className={` absolute top-32 sm:top-none lg:hidden w-[100vw]`} />
         
         <div className='w-full absolute h-screen flex items-center'>
           <div className={`${lexend.className} hidden lg:w-[600px] xl:w-[800px] lg:absolute left-[2%] lg:flex flex-col space-y-5 px-5 relative`}>
