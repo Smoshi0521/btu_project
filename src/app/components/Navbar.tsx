@@ -84,8 +84,8 @@ function Navbar({ setOpenMenu }: Props) {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 15 }}
                     transition={{ delay: 0, duration: 0.5 }}
-                    className='w-full py-5 relative text-skyBlue'>
-                    <a className='text-white text-2xl tracking-widest flex justify-center text-skyBlue'>
+                    className='w-full py-3 relative text-skyBlue'>
+                    <a className='text-2xl tracking-widest flex justify-center text-skyBlue'>
                       TEAM
                     </a>
                   </motion.div>
@@ -95,8 +95,8 @@ function Navbar({ setOpenMenu }: Props) {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 15 }}
                     transition={{ delay: 0.1, duration: 0.5 }}
-                    className='w-full py-5 relative '>
-                    <a className='text-white text-2xl tracking-widest flex justify-center text-skyBlue'>
+                    className='w-full py-3 relative '>
+                    <a className='text-2xl tracking-widest flex justify-center text-skyBlue'>
                       ORIGINS
                     </a>
                   </motion.div>
@@ -106,8 +106,8 @@ function Navbar({ setOpenMenu }: Props) {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 15 }}
                     transition={{ delay: 0.2, duration: 0.5 }}
-                    className='w-full py-5 relative '>
-                    <a className='text-white text-2xl tracking-widest flex justify-center text-skyBlue'>
+                    className='w-full py-3 relative '>
+                    <a className='text-2xl tracking-widest flex justify-center text-skyBlue'>
                       BTU ART
                     </a>
                   </motion.div>
@@ -117,8 +117,8 @@ function Navbar({ setOpenMenu }: Props) {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 15 }}
                     transition={{ delay: 0.3, duration: 0.5 }}
-                    className='w-full py-5 relative '>
-                    <a className='text-white text-2xl tracking-widest flex justify-center text-skyBlue'>
+                    className='w-full py-3 relative '>
+                    <a className='text-2xl tracking-widest flex justify-center text-skyBlue'>
                       NFT GALLERY
                     </a>
                   </motion.div>
@@ -128,8 +128,8 @@ function Navbar({ setOpenMenu }: Props) {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 15 }}
                     transition={{ delay: 0.4, duration: 0.5 }}
-                    className='w-full py-5 relative '>
-                    <a className='text-white text-2xl tracking-widest flex justify-center text-skyBlue'>
+                    className='w-full py-3 relative '>
+                    <a className='text-2xl tracking-widest flex justify-center text-skyBlue'>
                       MORE
                     </a>
                   </motion.div>
@@ -139,8 +139,8 @@ function Navbar({ setOpenMenu }: Props) {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 15 }}
                     transition={{ delay: 0.5, duration: 0.5 }}
-                    className='w-full py-5 relative '>
-                    <a className='text-white text-2xl tracking-widest flex justify-center text-pink-500'>
+                    className='w-full py-3 relative '>
+                    <a className='text-2xl tracking-widest flex justify-center text-pink-500'>
                       CONNECT WALLET
                     </a>
                   </motion.div>
